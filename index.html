@@ -1,258 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doctor App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css"> 
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- nav bar -->
-     <nav>
-        <div class="nav-content gen-layout">
-            <h1>docto<span>r</span></h1>
+    <nav>
+      <div class="nav-content gen-layout">
+        <h1>docto<span>r</span></h1>
 
+        <!-- hamburger code will be here -->
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
 
-            <!-- hamburger code will be here -->
-
-            <div class="nav-right">
-                <div class="nav-items">
-                    <a href="#">home</a>
-                    <a href="#">about us</a>
-                    <a href="#services">services</a>
-                    <a href="#findDoctor">find a doctor</a>
-                    <a href="#">contact</a>
-                    <button class="btn-btn">book an appointment</button>
-                </div>
-
-            </div>
-
+        <div class="nav-right">
+          <div class="nav-items">
+            <a href="#">home</a>
+            <a href="#">about us</a>
+            <a href="#services">services</a>
+            <a href="#findDoctor">find a doctor</a>
+            <a href="#">contact</a>
+            <button class="btn-btn">book an appointment</button>
+          </div>
         </div>
-     </nav>
+      </div>
+    </nav>
 
-     <!-- hero section -->
-      <section class="hero-sec">
-        <div class="hero gen-layout">
-            <!-- hero-content -->
-            <div class="hero-content">
-                <h1>Find a Doctor & Book Online</h1>
-                <p>Medical Recover is most focused in helping you Discover your most Beautiful</p>
+    <!-- hero section -->
+    <section class="hero-sec">
+      <div class="hero gen-layout">
+        <!-- hero-content -->
+        <div class="hero-content">
+          <h1>Find a Doctor & Book Online</h1>
+          <p>
+            Medical Recover is most focused in helping you Discover your most
+            Beautiful
+          </p>
 
-                <div class="hero-btn">
-                    <button class="btn-btn"> take an appointment</button>
-                    <button class="btn-btn">learn more</button>
-                </div>
+          <div class="hero-btn">
+            <button class="btn-btn">take an appointment</button>
+            <button class="btn-btn">learn more</button>
+          </div>
+        </div>
+        <!-- hero-image-->
+        <div class="hero-image">
+          <img src="./images/doctor p.png" alt="doctor p" />
+        </div>
+      </div>
+    </section>
+
+    <!--main section-->
+    <main>
+      <!-- service section-->
+      <section>
+        <div class="services gen-layout">
+          <div class="selecting-input-option">
+            <select>
+              <option value="">Select Date & Time</option>
+              <option value="">Western African Time</option>
+              <option value="">Europe</option>
+              <option value="">Asian</option>
+            </select>
+            <div class="search-input">
+              <input type="search" placeholder="search doctors..." />
+              <span><i class="fa fa-search"></i></span>
             </div>
-              <!-- hero-image-->
-               <div class="hero-image">
-                <img src="./images/doctor p.png" alt="doctor p">
+            <button>search</button>
+          </div>
 
-               </div>
+          <div class="service-card-wrapper" id="services">
+            <!-- first sevice card -->
+            <div class="service-card">
+              <span><i class="fa fa-phone-square"></i></span>
+
+              <h2>24hrs service</h2>
+              <p>
+                You can help us to transform at anytime of the day. Our skilled
+                experienced team is always there ready to solve any problem you
+                may have.
+              </p>
+            </div>
+
+            <!-- second service card -->
+            <div class="service-card">
+              <span><i class="fa fa-address-book"></i></span>
+              <h2>Qualified Doctor</h2>
+              <p>
+                You can help us to transform at anytime of the day. Our skilled
+                experienced team and good methods of treatment makes us proud.
+              </p>
+            </div>
+            <!-- third service card -->
+            <div class="service-card">
+              <span><i class="fa fa-heartbeat"></i></span>
+              <h2>Theather Operation</h2>
+              <p>
+                You can help us to transform at anytime of the day. We change
+                all perspectives of health and sanitations of human being.
+              </p>
+            </div>
+            <!-- fourth service card-->
+            <div class="service-card">
+              <span><i class="fa fa-ambulance"></i></span>
+              <h2>Emergency Care</h2>
+              <p>
+                You can help us to transform at anytime of the day. Our skilled
+                experienced team is always there ready to solve any problem you
+                may have.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!--main section-->
-      <main>
-        <!-- service section-->
-        <section>
-            <div class="services gen-layout">
-                <div class="selecting-input-option">
-                    <select>
-                        <option value="">Select Date & Time</option>
-                        <option value="">Western African Time</option>
-                        <option value="">Europe</option>
-                        <option value="">Asian</option>
-                    </select>
-                    <div class="search-input">
-                        <input type="search" placeholder="search doctors..."> <span><i class="fa fa-search"></i></span>
-                    </div>
-                    <button>search</button>
-                </div>
-                
-            <div class="service-card-wrapper" id="services">
-                <!-- first sevice card -->
-                <div class="service-card">
-                    <span><i class="fa fa-phone-square"></i></span>
-    
-                    <h2>24hrs service</h2>
-                    <p>You can help us to transform at anytime of the day.
-                        Our skilled experienced team is always there ready to solve any problem you may have.
-                    </p>
-                    
-                </div>
-    
-                <!-- second service card -->
-                <div class="service-card">
-                    <span><i class="fa fa-address-book"></i></span>
-                    <h2>Qualified Doctor </h2>
-                    <p>You can help us to transform at anytime of the day.
-                        Our skilled experienced team and good methods of treatment makes us proud.
-                    </p>
-                   
-                </div>
-                <!-- third service card -->
-                <div class="service-card">
-                    <span><i class="fa fa-heartbeat"></i></span>
-                    <h2> Theather Operation</h2>
-                    <p>You can help us to transform at anytime of the day.
-                        We change all perspectives of health and sanitations of human being.
-                    </p>
-                  
-                </div>
-                <!-- fourth service card-->
-                <div class="service-card">
-                    <span><i class="fa fa-ambulance"></i></span>
-                    <h2>Emergency Care</h2>
-                    <p>You can help us to transform at anytime of the day.
-                        Our skilled experienced team is always there ready to solve any problem you may have.
-                    </p>
-                </div>
-            </div>
-            </div>
-
-        </section>
-   
-
-        <!-- discover doctor-->
-        <section class="discover-doctors" id="findDoctor">
-         <div class="discover">
-             <h4>find our <span>doctor</span></h4>
-             <h1>discover our doctor</h1>
-
-    </div>
+      <!-- discover doctor-->
+      <section class="discover-doctors" id="findDoctor">
+        <div class="discover">
+          <h4>find our <span>doctor</span></h4>
+          <h1>discover our doctor</h1>
+        </div>
 
         <div class="discover-doctors-wrapper gen-layout">
+          <!-- first discover doctor card -->
+          <div class="doctor-card">
+            <img src="images/doctor p.png" alt="doctor" />
 
-            <!-- first discover doctor card -->
-             <div class="doctor-card">
-                <img src="images/doctor p.png" alt="doctor">
+            <div class="doctor-card-content">
+              <h3>dr. esther howard</h3>
 
-                <div class="doctor-card-content">
-                    <h3>dr. esther howard</h3>
-
-                    <ul>
-                        <li>dentistry</li>
-                        <li>420 EGP</li>
-                        <li>1901.Shiloh, Hawii</li>
-                        
-                    </ul>
-                </div>
-
-             </div>
-             <!-- second discover doctor card -->
-             <div class="doctor-card">
-                <img src="images/doctor p.png" alt="doctor">
-
-                <div class="doctor-card-content">
-                    <h3>dr. esther howard</h3>
-
-                    <ul>
-                        <li>dentistry</li>
-                        <li>420 EGP</li>
-                        <li>1901, shiloh hawii</li>
-                        
-                    </ul>
-                </div>
-
-             </div>
-             <!-- third discover doctor card -->
-             <div class="doctor-card">
-                <img src="images/doctor p.png" alt="doctor">
-
-                <div class="doctor-card-content">
-                    <h3>dr. esther howard</h3>
-
-                    <ul>
-                        <li>dentistry</li>
-                        <li>420 EGP</li>
-                        <li>1901. Shiloh Hawii</li>
-                        
-                    </ul>
-                </div>
-
-             </div>
-             <!-- forth discover doctor card -->
-             <div class="doctor-card">
-                <img src="images/doctor p.png" alt="doctor">
-
-                <div class="doctor-card-content">
-                    <h3>dr. esther howard</h3>
-
-                    <ul>
-                        <li>dentistry</li>
-                        <li>420 EGP</li>
-                        <li>1901.Shiloh ,Hawii</li>
-                        
-                    </ul>
-                </div>
-
-             </div>
-             <!-- fifth discover doctor card -->
-             <div class="doctor-card">
-                <img src="images/doctor p.png" alt="doctor">
-
-                <div class="doctor-card-content">
-                    <h3>dr. esther howard</h3>
-
-                    <ul>
-                        <li>dentistry</li>
-                        <li>420 EGP</li>
-                        <li>1901. Shiloh, Hawii</li>
-                        
-                    </ul>
-                </div>
-
-             </div>
-             <!-- sixth discover doctor card -->
-             <div class="doctor-card">
-                <img src="images/doctor p.png" alt="doctor">
-
-                <div class="doctor-card-content">
-                    <h3>dr. esther howard</h3>
-
-                    <ul>
-                        <li>dentistry</li>
-                        <li>420 EGP</li>
-                        <li>1901. Shiloh, Hawii</li>
-                        
-                    </ul>
-                </div>
-
-             </div>
-
-        </div>
-                <button class="doctor-btn"> view all doctors</button>
-
-                
-</section>
-
-<!-- long container -->
-<section class="container">
-            <div class="longsection">
-                <div class="">
-                    <h1> 10M</h1>
-                    <P> happy customer</P>
-                </div>
-                <div class="">
-                    <h1> 05M</h1>
-                    <P>monthly visitors</P>
-                </div>
-                <div class="">
-                    <h1> 234</h1>
-                    <p> countries worldwide</p>
-                </div>
-                <div class="">
-                    <h1> 4.3</h1>
-                    <p> trust pilot</p>
-                </div>
+              <ul>
+                <li>dentistry</li>
+                <li>420 EGP</li>
+                <li>1901.Shiloh, Hawii</li>
+              </ul>
             </div>
-</section>
+          </div>
+          <!-- second discover doctor card -->
+          <div class="doctor-card">
+            <img src="images/doctor p.png" alt="doctor" />
 
-     </main>
+            <div class="doctor-card-content">
+              <h3>dr. esther howard</h3>
 
+              <ul>
+                <li>dentistry</li>
+                <li>420 EGP</li>
+                <li>1901, shiloh hawii</li>
+              </ul>
+            </div>
+          </div>
+          <!-- third discover doctor card -->
+          <div class="doctor-card">
+            <img src="images/doctor p.png" alt="doctor" />
 
-     <!-- footer -->
-</body>
+            <div class="doctor-card-content">
+              <h3>dr. esther howard</h3>
+
+              <ul>
+                <li>dentistry</li>
+                <li>420 EGP</li>
+                <li>1901. Shiloh Hawii</li>
+              </ul>
+            </div>
+          </div>
+          <!-- forth discover doctor card -->
+          <div class="doctor-card">
+            <img src="images/doctor p.png" alt="doctor" />
+
+            <div class="doctor-card-content">
+              <h3>dr. esther howard</h3>
+
+              <ul>
+                <li>dentistry</li>
+                <li>420 EGP</li>
+                <li>1901.Shiloh ,Hawii</li>
+              </ul>
+            </div>
+          </div>
+          <!-- fifth discover doctor card -->
+          <div class="doctor-card">
+            <img src="images/doctor p.png" alt="doctor" />
+
+            <div class="doctor-card-content">
+              <h3>dr. esther howard</h3>
+
+              <ul>
+                <li>dentistry</li>
+                <li>420 EGP</li>
+                <li>1901. Shiloh, Hawii</li>
+              </ul>
+            </div>
+          </div>
+          <!-- sixth discover doctor card -->
+          <div class="doctor-card">
+            <img src="images/doctor p.png" alt="doctor" />
+
+            <div class="doctor-card-content">
+              <h3>dr. esther howard</h3>
+
+              <ul>
+                <li>dentistry</li>
+                <li>420 EGP</li>
+                <li>1901. Shiloh, Hawii</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="doctor-btn">view all doctors</button>
+      </section>
+
+      <!-- long container -->
+      <section class="container">
+        <div class="icon">
+          <span><i class="fa fa-check-circle-o"></i></span>
+        </div>
+        <div class="longsection">
+          <div class="">
+            <h1>10M</h1>
+            <p>happy customer</p>
+          </div>
+          <div class="">
+            <h1>05M</h1>
+            <p>monthly visitors</p>
+          </div>
+          <div class="">
+            <h1>234</h1>
+            <p>countries worldwide</p>
+          </div>
+          <div class="">
+            <h1>4.3</h1>
+            <p>trust pilot</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+  </body>
 </html>

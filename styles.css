@@ -19,6 +19,10 @@ nav{
     padding-block: 1rem;
 }
 
+label, #toggle{
+    display: none;
+}
+
 .nav-content{
     display: flex;
     align-items: center;
@@ -191,11 +195,12 @@ select{
 .service-card::nth :nth-child(2) > span{
     background-color: #fff;
 }
-.service-card > span > img{
+.service-card > span > i{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2rem auto;
+    font-size: 2rem;
     width: 80px;
     height: 80px;
     border-radius: 100%;
@@ -210,12 +215,12 @@ select{
     font-size: 15px;
     text-align: center;
 }
-
 /*  styling for doctors section */
 
 .discover-doctors{
     background-color: #e6edee;
-    padding-block: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
    
 }
 
@@ -293,11 +298,10 @@ select{
     text-transform: capitalize;
     background-color: transparent;
     color: #034e52;
-    display: flex;
     gap: 2rem;
-    justify-content: end;
-    padding: 25px;
-    align-items: end;
+    float: right;
+    padding: 15px 25px;
+    
 }
 
 .longsection{
@@ -312,6 +316,18 @@ select{
 .longsection>h1{
     text-decoration: #034e52;
 }
+.longsection > span >i{
+    margin: 2rem auto;
+    font-size: 4rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #034e52;
+    padding: 15px 30px;
+}
+
+    
+
     
 /*  responsive styling wih media query */
 @media(min-width: 320px) and (max-width:460px){
@@ -319,12 +335,49 @@ select{
         width: calc(100% - 30px);
     }
 
-    .nav-right{
-        display: none;
+    label{
+        display:block ;
+        font-size: 1.3rem;
+        color: #034e52;
+        font-weight: 900;
     }
 
+    .nav-right{
+        display: none;
+        position: absolute;
+    width: 340px;
+    padding: 1.8rem;
+    top: 4.4rem;
+    right: 3px;
+    z-index: 1;
+    background-color: #91b2ac;
+    opacity: .97;
+    border-bottom: 4px solid #094c3b;
+    /* transform: translate(100%, 0); */
+    /* transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); */
+    }
+
+    .nav-items {
+        padding: 0;
+        flex-direction: column;
+      }
+    
+      .nav-items > a {
+        width: 100%;
+        color: #094c3b;
+        font-size: 18px;
+        padding: 0.6rem;
+        text-align: right;
+        border-bottom: 4px solid #fff;
+      }
+
+      #toggle:checked + .nav-right {
+        display: block;
+        transform: none;
+      }
+
     .hero-sec{
-        background-color: #034e52;
+        background: #034e52;
     }
    
     .hero{
